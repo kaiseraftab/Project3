@@ -88,7 +88,8 @@ if (digitalRead(leftSensor) == 0 && digitalRead(rightSensor) == 0 )
   }
   else if (digitalRead(leftSensor) == 1 && digitalRead(rightSensor) == 1 ) {
     //Stop
-    stop();
+    delay(1500);
+    turnLeft();
   }
 }
 
